@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  circleView.h
 //  AnimationFun
 //
 //  Created by Marian O'Shea on 10/10/2014.
@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface CircleView : UIView
 
-@property (strong, nonatomic) UIWindow *window;
-
+-(void) drawCircleAnimated;
+-(void) pauseAnimation;
+-(void) resumeAnimation;
 
 @end
-

@@ -14,6 +14,7 @@
 		562AF37A19E7FD190094CED0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562AF37919E7FD190094CED0 /* Images.xcassets */; };
 		562AF37D19E7FD190094CED0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562AF37B19E7FD190094CED0 /* LaunchScreen.xib */; };
 		562AF38919E7FD190094CED0 /* AnimationFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 562AF38819E7FD190094CED0 /* AnimationFunTests.m */; };
+		5698561919EFBB1F00701F57 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5698561719EFBB1F00701F57 /* CircleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		562AF38219E7FD190094CED0 /* AnimationFunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationFunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		562AF38719E7FD190094CED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		562AF38819E7FD190094CED0 /* AnimationFunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationFunTests.m; sourceTree = "<group>"; };
+		5698561719EFBB1F00701F57 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		5698561819EFBB1F00701F57 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		562AF36B19E7FD190094CED0 /* AnimationFun */ = {
 			isa = PBXGroup;
 			children = (
+				5698561719EFBB1F00701F57 /* CircleView.m */,
+				5698561819EFBB1F00701F57 /* CircleView.h */,
 				562AF37019E7FD190094CED0 /* AppDelegate.h */,
 				562AF37119E7FD190094CED0 /* AppDelegate.m */,
 				562AF37319E7FD190094CED0 /* ViewController.h */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				562AF37519E7FD190094CED0 /* ViewController.m in Sources */,
+				5698561919EFBB1F00701F57 /* CircleView.m in Sources */,
 				562AF37219E7FD190094CED0 /* AppDelegate.m in Sources */,
 				562AF36F19E7FD190094CED0 /* main.m in Sources */,
 			);
@@ -345,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marian  O'Shea (S4E6E9YK38)";
 				INFOPLIST_FILE = AnimationFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +362,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marian  O'Shea (S4E6E9YK38)";
 				INFOPLIST_FILE = AnimationFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +423,7 @@
 				562AF38E19E7FD190094CED0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		562AF38F19E7FD190094CED0 /* Build configuration list for PBXNativeTarget "AnimationFunTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +432,7 @@
 				562AF39119E7FD190094CED0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
